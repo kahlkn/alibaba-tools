@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.kahlkn</groupId>
     <artifactId>alibaba-tools</artifactId>
-    <version>1.0.0.20191011-SNAPSHOT</version>
+    <version>1.0.0.20191020.beta</version>
     <packaging>jar</packaging>
     <name>Alibaba Tools</name>
     <url>https://github.com/kahlkn/alibaba-tools</url>
@@ -55,22 +55,28 @@
 
     <dependencies>
 
+        <!-- ///// begin artoria //// -->
+        <dependency>
+            <groupId>com.github.kahlkn</groupId>
+            <artifactId>artoria</artifactId>
+            <version>1.0.0.20191020.beta</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.kahlkn</groupId>
+            <artifactId>artoria-extend</artifactId>
+            <version>1.0.0.20191020.beta</version>
+            <scope>provided</scope>
+        </dependency>
+        <!-- ///// end artoria //// -->
+
         <!-- ///// begin misaka //// -->
         <dependency>
             <groupId>com.github.kahlkn</groupId>
             <artifactId>misaka</artifactId>
-            <version>1.0.0.2019044505-SNAPSHOT</version>
+            <version>1.0.0.20191020.beta</version>
         </dependency>
         <!-- ///// end misaka //// -->
-
-        <!-- ///// begin artoria //// -->
-        <dependency>
-            <groupId>com.github.kahlkn</groupId>
-            <artifactId>artoria-extend</artifactId>
-            <version>1.0.0.2019101205-SNAPSHOT</version>
-            <scope>provided</scope>
-        </dependency>
-        <!-- ///// end artoria //// -->
 
         <!-- ///// begin spring //// -->
         <dependency>
@@ -126,6 +132,13 @@
             <scope>provided</scope>
         </dependency>
         <!-- ///// end aliyun //// -->
+
+        <dependency>
+            <groupId>com.alipay.sdk</groupId>
+            <artifactId>alipay-sdk-java</artifactId>
+            <version>4.9.124.ALL</version>
+            <scope>provided</scope>
+        </dependency>
 
     </dependencies>
 

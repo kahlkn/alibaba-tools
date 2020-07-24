@@ -1,7 +1,7 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
 alibaba.cloud.oss.OssAutoConfiguration,\
-alibaba.cloud.sms.SmsAutoConfiguration
-
+alibaba.cloud.sms.SmsAutoConfiguration,\
+alibaba.pay.AliPayAutoConfiguration
 
 
 
