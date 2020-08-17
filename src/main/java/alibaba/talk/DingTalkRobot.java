@@ -81,8 +81,16 @@ public class DingTalkRobot {
             httpRequest.setMethod(HttpMethod.POST);
             httpRequest.addHeader("Content-Type", "application/json");
             if (object instanceof String) {
-                log.info("DingTalk robot send \"{}\". ", object);
-                httpRequest.setBody(object);
+                String str = String.valueOf(object);
+                boolean normal = StringUtils.isNotBlank(str)
+                        && str.startsWith("{") && str.endsWith("}");
+                if (normal) {
+                    log.info("DingTalk robot send \"{}\". ", object);
+                    httpRequest.setBody(object);
+                }
+                else {
+                    return sendText(str, false, null);
+                }
             }
             else {
                 log.info("DingTalk robot send \"{}\". ", JsonUtils.toJsonString(httpRequest));
