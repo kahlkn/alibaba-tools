@@ -79,6 +79,7 @@ public class DingTalkRobot {
             HttpRequest httpRequest = new HttpRequest();
             httpRequest.setUrl(full(webHook, secret));
             httpRequest.setMethod(HttpMethod.POST);
+            httpRequest.setCharset(UTF_8);
             httpRequest.addHeader("Content-Type", "application/json");
             if (object instanceof String) {
                 String str = String.valueOf(object);

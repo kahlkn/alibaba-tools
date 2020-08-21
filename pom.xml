@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.kahlkn</groupId>
     <artifactId>alibaba-tools</artifactId>
-    <version>1.0.0.20190641-SNAPSHOT</version>
+    <version>1.0.0.20191021.beta</version>
     <packaging>jar</packaging>
     <name>Alibaba Tools</name>
     <url>https://github.com/kahlkn/alibaba-tools</url>
@@ -59,13 +59,13 @@
         <dependency>
             <groupId>com.github.kahlkn</groupId>
             <artifactId>artoria</artifactId>
-            <version>1.0.0.20190641-SNAPSHOT</version>
+            <version>1.0.0.20191021.beta</version>
         </dependency>
 
         <dependency>
             <groupId>com.github.kahlkn</groupId>
             <artifactId>artoria-extend</artifactId>
-            <version>1.0.0.20190641-SNAPSHOT</version>
+            <version>1.0.0.20191021.beta</version>
             <scope>provided</scope>
         </dependency>
         <!-- ///// end artoria //// -->
@@ -140,12 +140,12 @@
             <scope>provided</scope>
         </dependency>
 
-        <dependency>
+        <!--<dependency>
             <groupId>com.aliyun</groupId>
             <artifactId>alibaba-dingtalk-service-sdk</artifactId>
             <version>1.0.1</version>
             <scope>provided</scope>
-        </dependency>
+        </dependency>-->
 
     </dependencies>
 
